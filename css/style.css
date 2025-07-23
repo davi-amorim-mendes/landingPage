@@ -26,6 +26,7 @@ header
     justify-content: left;
     gap: 50px;
     position: fixed;
+    z-index: 1000;
     width: 100%;
     height: 100px;
     padding: 20px;
@@ -146,7 +147,6 @@ h3, h4
 .desc p
 {
     margin-top: 20px;
-    width: 70%;
     font-size: 45px;
     font-family: Audiowide;
 }
@@ -227,6 +227,13 @@ h3, h4
     display: flex;
     flex-direction: column;
     gap: 20px;
+    transition: 0.2s;
+}
+
+.skillCard:hover
+{
+    transition: 0.2s;
+    margin-bottom: 20px;
 }
 
 .tituloSkill
@@ -244,4 +251,110 @@ h3, h4
     list-style: none;
     font-size: 24px;
     font-family: Kanit;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 500px)
+{
+    header
+    {
+        height: 60px;
+        gap: 10px;
+    }
+
+    nav
+    {
+        gap: 0;
+    }
+
+    .navLinks
+    {
+        width: 110px;
+    }
+
+    .logo
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .descInicio
+    {
+        padding: 20px;
+        padding-bottom: 0;
+        flex-direction: column;
+    }
+
+    .desc
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 100px;
+        height: 50%;
+    }
+
+    .desc h1
+    {
+        font-size: 80px;
+        width: 350px;
+        line-height: 50px;
+    }
+
+    .desc h2
+    {
+        font-size: 30px;
+    }
+
+    .desc p
+    {
+        font-size: 20px;
+    }
+
+    .imgInicio
+    {
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    #inicio
+    {
+        background: linear-gradient(
+        190deg,
+        #0d0d0d 50%,
+        #f1f1f1 50%
+    );  
+    }
+
+    #sobre
+    {
+        /* display: none; */
+        height: 100%;
+        padding-top: 30px;
+    }
+
+    .descSobre
+    {
+        font-size: 20px;
+        width: 80%;
+        height: 60%;
+    }
+
+    .descSobre p
+    {
+        padding-bottom: 30px;
+    }
+
+    .skills
+    {
+        grid-template-columns: 300px;
+        gap: 20px;
+    }
+
+    .tituloSkill
+    {
+        font-size: 25px;
+    }
 }
