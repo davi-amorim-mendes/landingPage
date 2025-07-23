@@ -265,12 +265,14 @@ h3, h4
 
     nav
     {
+        width: 100%;
         gap: 0;
+        
     }
 
     .navLinks
     {
-        width: 110px;
+        width: 100%;
         font-size: 15px;
     }
 
