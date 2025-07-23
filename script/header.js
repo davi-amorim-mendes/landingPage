@@ -2,15 +2,23 @@ window.addEventListener('scroll', function()
 {
     const headerNoBack = document.getElementById('headerNoBack');
     const headerBack = document.getElementById('headerBack');
+    const larguraTela = window.innerWidth;
     
     var scrollV = window.scrollY;
 
-    if(scrollV > 10)
+    if(larguraTela <= 820)
     {
         headerNoBack.id = "headerBack";
     }
     else
     {
-        headerBack.id = "headerNoBack";
+        if(scrollV > 90)
+        {
+            headerNoBack.id = "headerBack";
+        }
+        else
+        {
+            headerBack.id = "headerNoBack";
+        }
     }
 })
