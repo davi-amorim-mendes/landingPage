@@ -7,7 +7,7 @@ window.addEventListener('scroll', function()
     
     var scrollV = window.scrollY;
 
-    if(scrollV > 90)
+    if(scrollV > 0)
     {
         headerNoBack.id = "headerBack";
     }
