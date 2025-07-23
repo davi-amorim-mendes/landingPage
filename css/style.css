@@ -271,6 +271,7 @@ h3, h4
     .navLinks
     {
         width: 110px;
+        font-size: 15px;
     }
 
     .logo
@@ -284,6 +285,7 @@ h3, h4
         padding: 20px;
         padding-bottom: 0;
         flex-direction: column;
+        overflow-x: hidden;
     }
 
     .desc
