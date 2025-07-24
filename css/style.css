@@ -165,7 +165,7 @@ h3, h4
 .imgInicio
 {
     background-image: url('../img/Davi/foto1.png');
-    background-position: center;
+    background-position:bottom;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
