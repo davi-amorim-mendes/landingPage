@@ -1,7 +1,6 @@
 window.addEventListener('scroll', function()
 {
     const header = document.querySelector('.header')
-    // const headerBack = document.getElementById('headerBack');
     const larguraTela = window.innerWidth;
     
     var scrollV = window.scrollY;
