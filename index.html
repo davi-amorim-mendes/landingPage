@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="header" id="headerNoBack">
-        <a href="#inicio"><img class="logo" src="icons/logo/LogoWhite.png" alt="logo"></a>
-        <nav>
-            <a class="navLinks" href="#sobre">About me</a>
-            <a class="navLinks" href="#projetos">Projects</a>
-            <a class="navLinks" href="#contato">CONTACT</a>
-        </nav>
+    <header>
+        <div class="divNav">
+            <a href="#inicio"><img class="logo" src="icons/logo/LogoWhite.png" alt="logo"></a>
+            <nav>
+                <a class="navLinks" id="linkSobre" href="#sobre">About me</a>
+                <a class="navLinks" id="linkProjetos" href="#projetos">Projects</a>
+                <a class="navLinks" id="linkContato" href="#contato">CONTACT</a>
+            </nav>
+        </div>
+        <button class="idioma" onclick="traduzir()"><img class="bandeira" src=""></button>
     </header>
     <main>
         <section class="secao" id="inicio">
@@ -30,9 +33,9 @@
             <div class="transicao"></div>
         </section>
         <section class="secao" id="sobre">
-            <h1>About me</h1>
-            <p>I'm a web developer passionate about technology and creating functional and intuitive solutions. I'm currently studying Computer Engineering and specializing in Full Stack development.</p>
-            <h2>Skills</h2>
+            <h1 id="tituloSobre">About me</h1>
+            <p id="pSobre">I'm a web developer passionate about technology and creating functional and intuitive solutions. I'm currently studying Computer Engineering and specializing in Full Stack development.</p>
+            <h2 id="tituloHabilidade">Skills</h2>
             <div class="skills">
                 <div id="skillCard">
                     <h1>Front-End</h1>
@@ -52,7 +55,7 @@
                     </ul>
                 </div>
                 <div id="skillCard">
-                    <h1>Others</h1>
+                    <h1 id="tituloOutros">Others</h1>
                     <ul class="skillLista">
                         <li><i class="fa-brands fa-figma"></i> Figma</li>
                         <li><i class="fa-brands fa-git-alt"></i> Git</li>
@@ -66,4 +69,5 @@
     </main>
 </body>
 <script src="script/header.js"></script>
+<script src="script/lang/traducao.js"></script>
 </html>

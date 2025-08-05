@@ -1,26 +1,25 @@
 window.addEventListener('scroll', function()
 {
-    const header = document.querySelector('.header')
+    const header = document.getElementsByTagName('header')[0];
     const larguraTela = window.innerWidth;
     
     var scrollV = window.scrollY;
 
+    header.classList.remove('headerBack', 'headerNoBack');
+
     if(larguraTela <= 820)
     {
-        header.id = "headerBack";
+        header.classList.add('headerBack');
     }
     else
     {
         if(scrollV > 90)
         {
-            header.id = "headerBack";
+            header.classList.add('headerBack');
         }
         else
         {
-            header.id = "headerNoBack";
+            header.classList.add('headerNoBack');
         }
     }
-})
-
-// const lang = document.documentElement.lang; 
-// PEGA O IDIOMA DA PÁGINA
+});
