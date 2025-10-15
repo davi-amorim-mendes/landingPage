@@ -8,6 +8,7 @@ const tituloSobre = document.getElementById('tituloSobre');
 const pSobre = document.getElementById('pSobre');
 const tituloHabilidade = document.getElementById('tituloHabilidade');
 const tituloOutros = document.getElementById('tituloOutros');
+const tituloProjetos = document.getElementById('tituloProject');
 
 function br()
 {
@@ -34,6 +35,9 @@ function br()
 
     // TITULO OUTROS
     tituloOutros.textContent = "Outras";
+
+    // TITULO PROJETOS
+    tituloProjetos.textContent = "Projetos";
 }
 
 function en()
@@ -61,6 +65,9 @@ function en()
 
     // TITULO OUTROS
     tituloOutros.textContent = "Others";
+
+    // TITULO PROJETOS
+    tituloProjetos.textContent = "Projects";
 }
 
 function traduzir()

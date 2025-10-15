@@ -1,26 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
-html
-{
+html {
     scroll-behavior: smooth;
 }
 
-*
-{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body
-{
+body {
     width: 100%;
     height: 100%;
 }
 
-header
-{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,50 +28,43 @@ header
     padding: 20px;
 }
 
-.headerNoBack
-{
+.headerNoBack {
     background-color: transparent;
     transition: 0.2s;
 }
 
-.headerBack
-{
+.headerBack {
     background-color: rgb(13, 13, 13, 0.9);
     backdrop-filter: blur(5px);
     transition: 0.2s;
 }
 
-.divNav
-{
+.divNav {
     display: flex;
     gap: 20px;
 }
 
-.logo
-{
+.logo {
     width: 70px;
     height: 70px;
     transition: 0.2s;
 }
 
-.logo:hover
-{
+.logo:hover {
     transition: 0.2s;
     box-shadow: 1px 1px 10px #f1f1f1;
     border: 3px ridge #f1f1f1;
     border-radius: 20%;
 }
 
-nav
-{
+nav {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
 
-.navLinks
-{
+.navLinks {
     width: 150px;
     height: 50px;
     display: flex;
@@ -87,64 +76,54 @@ nav
     transition: 0.2s;
 }
 
-.navLinks:hover
-{
+.navLinks:hover {
     transition: 0.2s;
     box-shadow: 1px 1px 10px #f1f1f1;
     border: 3px ridge #f1f1f1;
     border-radius: 10px;
 }
 
-.idioma
-{
+.idioma {
     background: transparent;
     border: none;
 }
 
-.bandeira
-{
+.bandeira {
     border-radius: 20%;
     cursor: pointer;
     transition: 0.2s;
     border: 2px ridge #f1f1f1;
 }
 
-.bandeira:hover
-{
+.bandeira:hover {
     transition: 0.2s;
     box-shadow: 1px 1px 10px #0d0d0d;
     border: 3px ridge #f1f1f1;
     border-radius: 10px;
 }
 
-a
-{
+a {
     font-family: Kanit, sans-serif;
 }
 
-.secao
-{
+.secao {
     width: 100%;
     height: 100vh;
     display: flex;
 }
 
-#inicio
-{
-    background: linear-gradient(
-        120deg,
-        #0d0d0d 50%,
-        #f1f1f1 50%
-    );
+#inicio {
+    background: linear-gradient(120deg,
+            #0d0d0d 50%,
+            #f1f1f1 50%);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
     padding-bottom: 0;
     flex-direction: column;
 }
 
-.descInicio
-{
+.descInicio {
     width: 100%;
     height: 100%;
     display: flex;
@@ -153,8 +132,7 @@ a
     padding-bottom: 0;
 }
 
-.desc
-{
+.desc {
     width: 100%;
     height: 100%;
     padding-top: 120px;
@@ -162,24 +140,20 @@ a
     text-align: left;
 }
 
-#inicio h1
-{
+#inicio h1 {
     color: #f1f1f1;
 }
 
-#headT
-{
+#headT {
     font-size: 45px;
 }
 
-#bodyT
-{
+#bodyT {
     font-size: 150px;
     line-height: 90px;
 }
 
-#footT
-{
+#footT {
     margin-top: 20px;
     font-size: 45px;
     font-weight: 500;
@@ -187,10 +161,9 @@ a
     font-style: italic;
 }
 
-.imgInicio
-{
-    background-image: url('../img/davi/davi-low.png');
-    background-position:bottom;
+.imgInicio {
+    background-image: url('../img/davi/davi-color.png');
+    background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -198,17 +171,15 @@ a
     margin-left: 350px;
 }
 
-.transicao
-{
+.transicao {
     width: 100%;
     height: 100px;
     background-color: #0d0d0d;
-    border-bottom: 10px groove #cccccc;;
+    border-bottom: 10px groove #cccccc;
 }
 
-#sobre
-{
-    background-color: #cccccc;;
+#sobre {
+    background: repeating-radial-gradient(farthest-corner at 88% 80%, #cccccc 0, #b8b8b8 575px, #cccccc 575px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,8 +189,7 @@ a
     padding-top: 130px;
 }
 
-#sobre h1
-{
+#sobre h1 {
     width: 100%;
     font-family: Kanit;
     text-align: center;
@@ -227,8 +197,7 @@ a
     color: #0d0d0d;
 }
 
-#sobre p
-{
+#sobre p {
     width: 50%;
     height: 70%;
     font-family: Consolas;
@@ -240,14 +209,12 @@ a
     margin-bottom: 50px;
 }
 
-#sobre h2
-{
+#sobre h2 {
     font-family: Kanit;
     font-size: 35px;
 }
 
-.skills
-{
+.skills {
     width: 100%;
     height: 100%;
     display: grid;
@@ -257,8 +224,7 @@ a
     gap: 130px;
 }
 
-#skillCard
-{
+#skillCard {
     width: 100%;
     height: 100%;
     background-color: #f6f6f6;
@@ -271,14 +237,12 @@ a
     transition: 0.2s;
 }
 
-#skillCard:hover
-{
+#skillCard:hover {
     transition: 0.2s;
     margin-bottom: 20px;
 }
 
-#skillCard h1
-{
+#skillCard h1 {
     width: 100%;
     height: 50px;
     font-size: 30px;
@@ -287,65 +251,111 @@ a
     border-bottom: 2px solid #0d0d0d;
 }
 
-.skillLista
-{
+.skillLista {
     list-style: none;
     font-size: 24px;
     font-family: Kanit;
 }
 
+#projetos {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: repeating-radial-gradient(farthest-corner at 10% 20%, #0d0d0d 0, #525252 575px, #cccccc 575px);
+}
+
+#tituloProject {
+    font-family: Kanit;
+    font-size: 50px;
+    color: #f1f1f1;
+}
+
+.projectCard {
+    width: 900px;
+    height: 600px;
+    text-decoration: none;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #0d0d0d;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.projectCard:hover {
+    transition: 0.2s;
+    padding: 20px;
+    width: 899px;
+    height: 599px;
+        box-shadow: 1px 1px 10px #f1f1f1;
+    border: 3px ridge #f1f1f1;
+}
+
+.imgProject {
+    width: 100%;
+    height: 85%;
+}
+
+.imgProject:hover {
+    opacity: 30%;
+}
+
+#tituloProject {
+    margin-bottom: 50px;
+}
+
+.projectCard h1 {
+    font-size: 50px;
+}
+
+
 /* RESPONSIVIDADE */
 
-@media (max-width: 820px)
-{
-    header
-    {
+@media (max-width: 860px) {
+    header {
         height: 100px;
         gap: 0;
         padding: 20px;
     }
 
-    nav
-    {
+    nav {
         width: 250px;
         gap: 0;
-        
+
     }
 
-    .navLinks
-    {
+    .navLinks {
         width: 100%;
-        font-size: 16px;
+        font-size: 15px;
     }
 
-    .logo
-    {
+    .logo {
         width: 50px;
         height: 50px;
     }
 
-    .idioma
-    {
+    .idioma {
         width: 35px;
         height: 35px;
     }
 
-    .bandeira
-    {
+    .bandeira {
         width: 100%;
         height: 100%;
     }
 
-    .descInicio
-    {
+    .descInicio {
         padding: 20px;
         padding-bottom: 0;
         flex-direction: column;
         overflow-x: hidden;
     }
 
-    .desc
-    {
+    .desc {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -354,53 +364,43 @@ a
         height: 50%;
     }
 
-    #bodyT
-    {
+    #bodyT {
         font-size: 80px;
         width: 350px;
         line-height: 50px;
     }
 
-    #headT
-    {
+    #headT {
         font-size: 30px;
     }
 
-    #footT
-    {
+    #footT {
         font-size: 20px;
         font-style: normal;
     }
 
-    .imgInicio
-    {
+    .imgInicio {
         margin-left: 50px;
         margin-top: 30px;
     }
 
-    #inicio
-    {
-        background: linear-gradient(
-        190deg,
-        #0d0d0d 50%,
-        #f1f1f1 50%
-    );  
+    #inicio {
+        background: linear-gradient(190deg,
+                #0d0d0d 50%,
+                #f1f1f1 50%);
     }
 
-    #sobre
-    {
+    #sobre {
         /* display: none; */
         height: 100%;
         padding-top: 120px;
     }
 
-    #sobre h1
-    {
+    #sobre h1 {
         height: 50px;
     }
 
-    #sobre p
-    {
+    #sobre p {
         font-size: 20px;
         width: 80%;
         height: 60%;
@@ -408,26 +408,81 @@ a
         margin-bottom: 0px;
     }
 
-    .skills
-    {
+    .skills {
         grid-template-columns: 300px;
         gap: 20px;
     }
 
-    #skillCard h1
-    {
+    #skillCard h1 {
         font-size: 25px;
     }
+
+    .projectCard {
+        width: 600px;
+        height: 400px;
+    }
+
+    .projectCard:hover {
+        transition: 0.2s;
+        padding: 0px;
+        width: 600px;
+        height: 400px;
+    }
+
+    .projectCard h1 {
+        font-size: 30px;
+    }
+
 }
 
-@media (max-width: 400px)
-{
-    nav
-    {
+@media (max-width: 390px) {
+    nav {
         width: 200px;
     }
-    .navLinks
+
+    .navLinks {
+        font-size: 11px;
+        height: 40px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .imgInicio {
+        margin: 0;
+        /* margin-right: 100px; */
+    }
+
+    .desc
     {
-        font-size: 13px;
+        padding-top: 70px;
+    }
+
+    #sobre
+    {
+    background: repeating-radial-gradient(farthest-corner at 2228% 280%, #cccccc 0, #b8b8b8 575px, #cccccc 575px);
+
+    }
+    #projetos
+    {
+    background: repeating-radial-gradient(farthest-corner at 1228% 150%, #0d0d0d 0, #525252 575px, #cccccc 575px);
+
+    }
+
+    .projectCard {
+        width: 300px;
+        height: 300px;
+    }
+
+    .projectCard:hover {
+        transition: 0.2s;
+        padding: 0px;
+        width: 300px;
+        height: 300px;
+    }
+    .imgProject{
+        height: 70%;
     }
 }
